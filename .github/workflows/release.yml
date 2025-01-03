@@ -18,9 +18,6 @@ jobs:
       - name: Debug Environment
         run: echo "Hello"
 
-      - name: Debug Environment
-        run: env
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
