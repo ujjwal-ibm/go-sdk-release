@@ -19,11 +19,10 @@ jobs:
           node-version: 'lts/*'
 
       - name: Install Semantic Release
-        run: npm ci
-        working-directory: release-tools
+        run: |
+          npm install -g semantic-release @semantic-release/github @semantic-release/commit-analyzer @semantic-release/release-notes-generator
 
       - name: Run Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npx semantic-release
-        working-directory: release-tools
+        run: semantic-release
