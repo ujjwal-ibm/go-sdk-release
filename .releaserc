@@ -1,6 +1,6 @@
 {
   "branches": ["main"],
-  "repositoryUrl": "https://github.com/ujjwal-ibm/go-sdk-release",
+  "repositoryUrl": "git@github.com:ujjwal-ibm/go-sdk-release.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
