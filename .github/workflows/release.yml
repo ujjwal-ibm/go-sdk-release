@@ -16,7 +16,9 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Debug Environment
-        run: echo "Hello"
+        run: |
+          echo "Hello"
+          echo "Repository Name: ${{ vars.NAME }}"
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
